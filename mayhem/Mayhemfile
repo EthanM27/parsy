@@ -1,0 +1,9 @@
+project: parsy
+
+target: fuzz_parsy
+
+image: ghcr.io/ethanm27/parsy:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_parsy.py
+      libfuzzer: true
